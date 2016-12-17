@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  z-index: 2;
 }
 
 .burger {
@@ -49,6 +50,54 @@ body {
 .header span a {
   color: #fff;
   text-decoration: none;
+}
+
+.wrapper--outer-mobile {
+  height: 100vh;
+  width: 100vw;
+  background: #555;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.mobile--menu {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mobile--menu span {
+  transition: 0.2s;
+}
+
+.mobile--menu span a {
+  color: #fff;
+  font-size: 3em;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+.mobile--menu span:nth-child(odd) {
+  transform: translateX(-30px);
+}
+
+.mobile--menu span:nth-child(even) {
+  transform: translateX(30px);
+}
+
+.mobile--menu--show {
+  opacity: 1;
+}
+
+.mobile--menu--show .mobile--menu span {
+  transform: translateX(0px);
 }
 
 .wrapper--outer {
