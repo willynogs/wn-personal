@@ -1,11 +1,32 @@
 doctype html
 html
   head
-    title= title
+    title= title 
+      |  | Will Naugle
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet')
     meta(name='viewport' content='width=device-width, initial-scale=1')
   body(ng-app='wnPersonal')
+    .wrapper--header
+      .burger
+        .b.b-1
+        .b.b-2
+        .b.b-3
+      .header
+        span
+          a(href='/about') About
+        span
+          a(href='/work') Work
+        span
+          a(href='/contact') Contact
+    .wrapper--outer-mobile
+      .mobile--menu
+        span
+          a(href='/about') About
+        span
+          a(href='/work') Work
+        span
+          a(href='/contact') Contact
     block content
     
     script(src='/javascripts/angular.min.js')
