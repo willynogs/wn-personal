@@ -71,7 +71,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  z-index: 5;
 }
 
 .mobile--menu span {
@@ -96,6 +95,7 @@ body {
 }
 
 .mobile--menu--show {
+  display: flex;
   opacity: 1;
 }
 
@@ -111,6 +111,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 4;
 }
 
 .title--main, .title--sub, .page--title {
@@ -153,7 +154,9 @@ body {
   .burger {
     display: flex;
   }
+  /*
   .wrapper--outer-mobile {
     display: flex;
   }
+  */
 }
