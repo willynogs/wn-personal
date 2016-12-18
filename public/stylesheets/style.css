@@ -111,12 +111,37 @@ body {
   justify-content: center;
 }
 
-.title--main, .title--sub {
+.title--main, .title--sub, .page--title {
   color: #fff;
 }
 
 .title--main {
   font-size: 2em;
+}
+
+.page--title {
+  font-size: 3em;
+  position: relative;
+}
+
+.page--title::after {
+  content: '';
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 2px solid #fff;
+  animation: 0.8s page-title-load forwards 0.2s;
+}
+
+@keyframes page-title-load {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @media(max-width: 600px){
