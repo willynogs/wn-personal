@@ -34,6 +34,11 @@ textarea {
   z-index: 10;
 }
 
+.index--wrap {
+  max-width: 350px;
+  width: 80vw;
+}
+
 .logo {
   margin-left: 30px;
   font-size: 2em;
@@ -212,6 +217,12 @@ textarea {
   transform: translate(-1px, -1px);
 }
 
+path {
+  stroke-width: 0.3;
+  stroke: #fff;
+  fill: #222;
+}
+
 @keyframes page-title-load {
   from {
     width: 0;
@@ -243,9 +254,4 @@ textarea {
   .page--content.contact-form {
     overflow: visible;
   }
-  /*
-  .wrapper--outer-mobile {
-    display: flex;
-  }
-  */
 }
