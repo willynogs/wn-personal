@@ -2,7 +2,9 @@
 var app = angular.module('wnPersonal', [])
 
 .controller('MainCtrl', ['$scope', function($scope){
-
+  $scope.name = '';
+  $scope.email = '';
+  $scope.msg = '';
 }]);
 
 //jquery
