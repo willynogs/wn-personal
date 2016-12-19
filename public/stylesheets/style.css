@@ -142,6 +142,7 @@ body {
   font-size: 3em;
   position: relative;
   transform: rotate(-90deg);
+  transition: 0.2s;
 }
 
 .page--title::after {
@@ -158,6 +159,7 @@ body {
 .page--content {
   max-width: 600px;
   color: #fff;
+  transition: 0.2s;
 }
 
 @keyframes page-title-load {
@@ -175,6 +177,18 @@ body {
   }
   .burger {
     display: flex;
+  }
+  .wrapper--outer {
+    flex-direction: column;
+  }
+  .page--title {
+    transform: rotate(0deg);
+    margin-bottom: 25px;
+  }
+  .page--content {
+    height: calc(100vh - 250px);
+    overflow: scroll;
+    max-width: 80vw;
   }
   /*
   .wrapper--outer-mobile {
