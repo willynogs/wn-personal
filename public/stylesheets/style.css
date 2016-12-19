@@ -37,6 +37,8 @@ textarea {
 .index--wrap {
   max-width: 350px;
   width: 80vw;
+  height: 50vh;
+  max-height: 350px;
 }
 
 .logo {
@@ -215,12 +217,6 @@ textarea {
 
 .submit--button:active::after {
   transform: translate(-1px, -1px);
-}
-
-path {
-  stroke-width: 0.3;
-  stroke: #fff;
-  fill: #222;
 }
 
 @keyframes page-title-load {
