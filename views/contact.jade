@@ -5,7 +5,8 @@ block content
     .wrapper--outer
       span.page--title Contact
       span.page--content.contact-form
+        span.title--sub(ng-if='message')  {{message}}
         input(type='text', placeholder='Name', ng-model='name', required)
         input(type='text', placeholder='Email', ng-model='email', required)
         textarea(placeholder='Message', ng-model='msg', required)
-        .submit--button
+        .submit--button(ng-click='submit()')

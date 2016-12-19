@@ -5,6 +5,10 @@ var app = angular.module('wnPersonal', [])
   $scope.name = '';
   $scope.email = '';
   $scope.msg = '';
+
+  $scope.submit = function(){
+    $scope.message = 'sending your message...';
+  }
 }]);
 
 //jquery
@@ -13,6 +17,8 @@ $('.burger').click(function(){
   $('.wrapper--outer-mobile').toggleClass('mobile--menu--show');
 });
 
+/*
 $('.submit--button').mouseup(function(){
-  alert();
+  alert('Your message has been sent!');
 });
+*/
