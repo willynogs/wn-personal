@@ -123,6 +123,13 @@ body {
   z-index: 4;
 }
 
+.index--wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .title--main, .title--sub, .page--title {
   color: #fff;
 }
