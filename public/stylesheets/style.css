@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   overflow: hidden;
+  background: #222;
 }
 
 .wrapper--header {
