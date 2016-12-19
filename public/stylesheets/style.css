@@ -118,7 +118,6 @@ body {
   height: 100vh;
   background: #222;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 4;
@@ -135,6 +134,7 @@ body {
 .page--title {
   font-size: 3em;
   position: relative;
+  transform: rotate(-90deg);
 }
 
 .page--title::after {
@@ -146,6 +146,11 @@ body {
   position: absolute;
   border-bottom: 2px solid #fff;
   animation: 0.8s page-title-load forwards 0.2s;
+}
+
+.page--content {
+  max-width: 600px;
+  color: #fff;
 }
 
 @keyframes page-title-load {
