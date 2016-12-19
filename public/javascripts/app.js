@@ -12,3 +12,7 @@ $('.burger').click(function(){
   $(this).toggleClass('burger-clicked');
   $('.wrapper--outer-mobile').toggleClass('mobile--menu--show');
 });
+
+$('.submit--button').mouseup(function(){
+  alert();
+});
