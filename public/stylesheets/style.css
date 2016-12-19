@@ -235,6 +235,9 @@ textarea {
     overflow: scroll;
     max-width: 80vw;
   }
+  .page--content.contact-form {
+    overflow: visible;
+  }
   /*
   .wrapper--outer-mobile {
     display: flex;
