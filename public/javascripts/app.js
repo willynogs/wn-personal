@@ -11,7 +11,11 @@ var app = angular.module('wnPersonal', [])
     $http.get(`/submit-contact/${$scope.name}/${$scope.email}/${$scope.msg}`)
       .then(function(r){
         //r.status == '200' ? $scope.message = 'message sent!' : $scope.message = 'error! please retry!';
-        console.log(r.status);
+        if(r.status == 200){
+          $scope.name = '';
+          $scope.email = '';
+          $scope.msg = '';
+        }
       });
   }
 }]);
