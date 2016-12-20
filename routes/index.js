@@ -20,7 +20,7 @@ router.get('/contact', function(req, res, next){
 });
 
 router.get('/submit-contact/:name/:email/:msg', function(req, res, next){
-  var transporter = nodemailer.createTransport('smtps://willynogs%40gmail.com:spencer513@smtp.gmail.com');
+  var transporter = nodemailer.createTransport('smtps://willynogs%40gmail.com:@smtp.gmail.com');
   var mailOptions = {
     from: `"${req.params.name}" <${req.params.email}>`,
     to: 'willynogs@gmail.com',
