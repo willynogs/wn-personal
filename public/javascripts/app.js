@@ -1,6 +1,11 @@
 //angular
 var app = angular.module('wnPersonal', [])
 
+.filter('trustUrl', function ($sce) {
+  return function(uri) {
+    return $sce.trustAsResourceUrl('https://embed.spotify.com/?uri=' + uri);
+}})
+
 .controller('MainCtrl', ['$scope', '$http', function($scope, $http){
   $scope.name = '';
   $scope.email = '';
@@ -18,6 +23,14 @@ var app = angular.module('wnPersonal', [])
         }
       });
   }
+}])
+
+.controller('XMCtrl', ['$scope', '$http', '$sce', function($scope, $http, $sce){
+  $http.get('/api/xm')
+    .then(function(r){
+      $scope.channels = r.data;
+      console.log(r);
+    });
 }]);
 
 //jquery

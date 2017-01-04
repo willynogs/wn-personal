@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -5,6 +7,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+var sirius = require('./xm');
+
+setInterval(sirius,12000);
 
 var routes = require('./routes/index');
 

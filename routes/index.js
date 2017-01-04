@@ -1,5 +1,7 @@
 var express = require('express');
 var nodemailer = require('nodemailer');
+var mongoose = require('mongoose');
+var XM = require('../models/XM');
 var router = express.Router();
 
 /* GET home page. */
@@ -34,6 +36,16 @@ router.get('/submit-contact/:name/:email/:msg', function(req, res, next){
     console.log('Message sent: ' + info.response);
   });
   res.send(req.data);
+});
+
+router.get('/xm', function(req, res, next){
+  res.render('xm', { title: 'XM' });
+});
+
+router.get('/api/xm', function(req, res, next){
+  XM.find({}, function(err, docs){
+    res.send(docs);
+  });
 });
 
 module.exports = router;
