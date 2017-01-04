@@ -51,7 +51,8 @@ function getXM(){
           }
         });
       });
-    });
+    })
+    .close();
 }
 
 module.exports = getXM;
