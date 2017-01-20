@@ -8,12 +8,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var sirius = require('./xm');
-import 'console.image';
 
-const con_url = '/images/d319.gif';
-console.image(con_url);
-
-setInterval(sirius,12000);
+//setInterval(sirius,12000);
 
 var routes = require('./routes/index');
 
