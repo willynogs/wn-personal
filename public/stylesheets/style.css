@@ -5,6 +5,10 @@ body {
   background: #222;
 }
 
+a {
+  color: #fff;
+}
+
 input:focus,
 select:focus,
 textarea:focus,

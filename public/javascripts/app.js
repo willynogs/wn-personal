@@ -1,5 +1,3 @@
-console.image('/images/d319.gif');
-
 //angular
 var app = angular.module('wnPersonal', [])
 

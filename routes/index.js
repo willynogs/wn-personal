@@ -48,4 +48,8 @@ router.get('/api/xm', function(req, res, next){
   });
 });
 
+router.get('/font-test', function(req, res, next){
+  res.render('font', { title: 'Font Test' }); 
+});
+
 module.exports = router;
